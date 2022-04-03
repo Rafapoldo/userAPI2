@@ -16,15 +16,18 @@
         </ul>
 
       <form @submit.prevent="save">
-
-          <label>Name</label>
-            <input type="text" placeholder="Name" v-model="usuario.name">
-          <label>Email</label>
-             <input type="email" placeholder="Email" v-model="usuario.email">
-          <label>Password</label>
-            <input type="password" placeholder="Password" v-model="usuario.password">
-          <button class="waves-effect waves-light btn-small">Salvar<i class="material-icons left">save</i></button>
-
+        <label>Name</label>
+        <input type="text" placeholder="Name" v-model="usuario.name">
+        
+        <label>Email</label>
+            <input type="email" placeholder="Email" v-model="usuario.email">
+        
+        <label>Password</label>
+        <input type="password" placeholder="Password" v-model="usuario.password">
+        
+        <label>Number</label>
+        <input type="number" placeholder="Number" v-model="usuario.number">
+        <button class="waves-effect waves-light btn-small">Salvar<i class="material-icons left">save</i></button>
       </form>
 
       <table>
@@ -35,6 +38,7 @@
             <th>NAME</th>
             <th>EMAIL</th>
             <th>PASSWORD</th>
+            <th>NUMBER</th>
             <th>OPTIONS</th>
           </tr>
 
@@ -47,6 +51,7 @@
             <td>{{ u.name }}</td>
             <td>{{ u.email }}</td>
             <td>{{ u.password }}</td>
+            <td>{{ u.number }}</td>
             <td>
               <button @click="editar(u)"  class="waves-effect btn-small blue darken-1"><i class="material-icons">create</i></button>
               <button @click="remover(u)" class="waves-effect btn-small red darken-1"><i class="material-icons">delete_sweep</i></button>
@@ -77,7 +82,8 @@
                     'id': '',
                     'name': '', 
                     'email': '',
-                    'password': ''
+                    'password': '',
+                    'number': ''
                 },
                 errors:[]
             } 

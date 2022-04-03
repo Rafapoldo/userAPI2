@@ -5436,6 +5436,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -5445,7 +5450,8 @@ __webpack_require__.r(__webpack_exports__);
         'id': '',
         'name': '',
         'email': '',
-        'password': ''
+        'password': '',
+        'number': ''
       },
       errors: []
     };
@@ -28260,6 +28266,29 @@ var render = function () {
             },
           }),
           _vm._v(" "),
+          _c("label", [_vm._v("Number")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.usuario.number,
+                expression: "usuario.number",
+              },
+            ],
+            attrs: { type: "number", placeholder: "Number" },
+            domProps: { value: _vm.usuario.number },
+            on: {
+              input: function ($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.usuario, "number", $event.target.value)
+              },
+            },
+          }),
+          _vm._v(" "),
           _vm._m(1),
         ]
       ),
@@ -28276,6 +28305,8 @@ var render = function () {
               _c("td", [_vm._v(_vm._s(u.email))]),
               _vm._v(" "),
               _c("td", [_vm._v(_vm._s(u.password))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(u.number))]),
               _vm._v(" "),
               _c("td", [
                 _c(
@@ -28353,6 +28384,8 @@ var staticRenderFns = [
         _c("th", [_vm._v("EMAIL")]),
         _vm._v(" "),
         _c("th", [_vm._v("PASSWORD")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("NUMBER")]),
         _vm._v(" "),
         _c("th", [_vm._v("OPTIONS")]),
       ]),
