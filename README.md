@@ -62,3 +62,18 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Check Dependencies
+
+-Make sure the dependencies are installed (like composer)
+-PHP version PHP 8.1.4
+-Laravel version 9.0
+-Local server (I used XAMPP)
+
+## installation
+
+- php artisan migrate    (to create the tables from database 'test')
+- php artisan serve      (to create a localhost of application)
+
+
+
