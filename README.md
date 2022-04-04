@@ -65,10 +65,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Check Dependencies
 
--Make sure the dependencies are installed (like composer)
--PHP version PHP 8.1.4
--Laravel version 9.0
--Local server (I used XAMPP)
+- Make sure the dependencies are installed (like composer)
+- PHP version PHP 8.1.4
+- Laravel version 9.0
+- Local server (I used XAMPP)
 
 ## installation
 
